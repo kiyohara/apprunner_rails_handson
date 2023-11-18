@@ -3,6 +3,7 @@ runtime: ruby31
 build:
   commands:
     build:
+      - not_found_command
       - sudo yum install -y libyaml-devel postgresql-devel
       - bundle install 
       - bundle exec rails db:migrate
